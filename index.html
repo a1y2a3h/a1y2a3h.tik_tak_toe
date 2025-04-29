@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="استمتع بلعبة Tic-Tac-Toe مباشرة من المتصفح. تحدى أصدقاءك أو العب ضد الكمبيوتر بمستويات صعوبة مختلفة.">
+    <meta name="keywords" content="Tic-Tac-Toe, لعبة XO, لعبة الذكاء, لعبة التحدي, العاب اونلاين, XO Game">
+    <meta name="author" content="AYAH ELMAHI">
+    <meta name="theme-color" content="#4CAF50"> 
+    <link rel="icon" href="images/ICON.icon">
+    <title>Tik Tak Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4833493670481160"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="game-container">
+        <h1>Tik Tak Toe 🎮</h1>
+        
+        <div class="input-container">
+            <input type="text" id="playerX" placeholder="Player X's Name">
+            <input type="text" id="playerO" placeholder="Player O's Name">
+            <input type="checkbox" id="computerToggle"> Play vs Computer
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <button id="startGame">Start Game</button>
+        </div>
+
+        <div class="gameboard">
+            <div class="board" id="board">
+                <div class="cell" id="0"></div>
+                <div class="cell" id="1"></div>
+                <div class="cell" id="2"></div>
+                <div class="cell" id="3"></div>
+                <div class="cell" id="4"></div>
+                <div class="cell" id="5"></div>
+                <div class="cell" id="6"></div>
+                <div class="cell" id="7"></div>
+                <div class="cell" id="8"></div>
+            </div>
+            <div id="message"></div>
+            <div id="scoreboard">
+                <p id="scoreX">X: 0</p>
+                <p id="scoreO">O: 0</p>
+            </div>
+        </div>
+        
+        <button id="resetBtn">Restart Game</button>
+    </div>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4833493670481160"
+    crossorigin="anonymous"></script>
+    
+    <script src="main.js"></script>
+</body>
+</html>

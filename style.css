@@ -1,0 +1,165 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #007BFF, #6A11CB);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 600px) {
+    .board {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+    }
+
+    .cell {
+        height: 70px;
+        font-size: 1.2em;
+    }
+
+    .input-container input,
+    .input-container button,
+    .input-container select {
+        font-size: 0.9em;
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 8px 15px;
+    }
+}
+
+
+
+/* Game Container */
+.game-container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Title */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #FFD700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* Input Styling */
+.input-container input,
+.input-container select {
+    padding: 10px;
+    margin: 5px;
+    font-size: 1em;
+    border: none;
+    border-radius: 10px;
+    width: 45%;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+
+.input-container button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background: #FFD700;
+    color: #333;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.input-container button:hover {
+    background: #FFA500;
+    transform: scale(1.1);
+}
+
+/* Gameboard Styling */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 300px;
+}
+
+.cell {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    font-size: 2em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cell:hover {
+    background-color: #FFD700;
+    transform: scale(1.1);
+}
+
+#message {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #FFD700;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+
+#scoreboard {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #FFD700;
+    color: #333;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+}
+
+button:hover {
+    background-color: #FFA500;
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .board {
+        grid-template-columns: repeat(3, 80px);
+    }
+
+    .cell {
+        height: 80px;
+        font-size: 1.5em;
+    }
+}
